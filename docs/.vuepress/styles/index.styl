@@ -1,0 +1,91 @@
+header.navbar {
+  border none
+  padding 0 1.5rem
+  line-height $navbarHeight
+}
+.navbar .home-link {
+  height $navbarHeight
+  margin 0
+  padding 0
+  display inline-flex
+  align-items center
+  line-height 1
+}
+.site-name {
+  line-height 1
+}
+.navbar .links{
+  top 0 !important
+}
+.sidebar {
+  border none
+  min-width 220px
+}
+
+.sidebar-sub-header a.sidebar-link.active {
+  background-color transparent
+  font-weight 700 !important
+}
+a.sidebar-link.active {
+  background-color rgba($accentColor, 35%)
+}
+
+.theme-default-content:not(.custom) {
+  margin 0
+}
+
+.sidebar-mask {
+  background-color rgba(#000000, 10%)
+}
+.CodeMirror-sizer {
+  background transparent !important
+}
+.lake-codeblock-content {
+  background transparent !important
+  border none !important
+}
+
+div[class*="language-"] pre,
+div[class*="language-"] pre[class*="language-"]{
+  box-shadow 5px 5px 15px $accentColor
+}
+div.page-nav {
+  margin 0
+}
+
+.theme-default-content:not(.custom) > h1,
+.theme-default-content:not(.custom) > h2,  {
+  margin-top unset
+}
+
+.theme-default-content:not(.custom) > h3, 
+.theme-default-content:not(.custom) > h4, 
+.theme-default-content:not(.custom) > h5, 
+.theme-default-content:not(.custom) > h6{
+   margin-top unset
+   padding-top 1.2rem
+ }
+
+@media (max-width: $MQMobile){
+  div.sidebar-button {
+    display: inline-flex
+    align-items center
+    position relative
+    top 0.2rem
+    left 0
+    height 100% !important
+    margin 0 0.25rem
+    padding 0
+    width 1.3rem
+    height 1.3rem
+  }
+  .navbar .site-name {
+    display inline-block
+    height 1.3em
+    // width: calc(100vw - 9.4rem);
+    overflow unset !important
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
