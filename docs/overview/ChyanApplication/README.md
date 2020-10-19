@@ -4,7 +4,11 @@
 
 > 环境搭建和文件配置请先阅读[快速开始](/overview/QuickStart/)
 
-<br/>
+:::warning 提示
+教程假定用户有一定的 js/ts 基础和 koa 发开经验 ,当然没有也可以 ; )
+:::
+
+## 入口文件
 
 `chyan`使用声明式的开发模式，入口文件也不例外！
 
@@ -12,7 +16,7 @@
 
 使用 `@ChyanApplication()` 来初始化 app
 
-```ts
+```ts scr/index.ts
 import { ChyanApplication, Get, BootstrapApplication } from "chyan";
 
 @ChyanApplication()
@@ -29,12 +33,24 @@ export class App extends BootstrapApplication {
 }
 ```
 
-::: details this.app 是什么?
-`this.app` 是 `Application` 类的实例
+## app 实例
 
-`Application` 则是`chyan`封装了 koa 实例的一个内部类
+成员 app 提供类似 koa 实例的方法
 
-即可以理解 `this.app` 为 `new koa()` 的增强版本
+在必要的时候你也可以通过`this.app.getKoaApplication()`获取到 koa 实例进行一些操作。
 
-更多 api 请查看 [Api#Application](/overview/Api/)
+::: warning 小心使用 koa 实例
+`chyan` 有自己的中间件定义顺序。
+
+所有通过 koa 实例添加的中间件都会被添加到中间件的最顶部。
+
+明确你在干什么！
 :::
+
+更多 app 方法请参考 [api#Application](/overview/api)
+
+## 路由
+
+## 自动导入
+
+## 依赖注入

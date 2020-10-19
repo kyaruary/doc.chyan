@@ -3,7 +3,10 @@ sidebar: false
 home: true
 features: null
 actionText: null
-actionLink: null
+title: null
+# actionLink: /overview/QuickStart/
+heroText: null
+tagline: null
 ---
 
-<!-- <Home></Home> -->
+<Enhome></Enhome>

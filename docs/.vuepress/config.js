@@ -4,13 +4,13 @@ const config = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     "/en/": {
       lang: "en-US", // 将会被设置为 <html> 的 lang 属性
-      title: "Chyan.js",
+      title: "CHYAN",
       description: "Developer Friendly Node.js Web Framework \n Based On Koa2 & Typescript",
     },
     "/": {
       lang: "zh-CN",
-      title: "Chyan.js",
-      description: "Vue 驱动的静态网站生成器",
+      title: "CHYAN",
+      description: "Developer Friendly Node.js Web Framework \n Based On Koa2 & Typescript",
     },
   },
   themeConfig: {

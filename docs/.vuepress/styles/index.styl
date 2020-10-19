@@ -14,7 +14,9 @@ header.navbar {
 .site-name {
   line-height 1
 }
+
 .navbar .links{
+  background transparent !important
   top 0 !important
 }
 .sidebar {
@@ -88,4 +90,20 @@ div.page-nav {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+}
+
+main.home,
+.theme-container,
+#app,
+body,
+html,
+.theme-default-content {
+  height 100%
+}
+
+main.home {
+  padding 0
+  margin 0
+  overflow hidden
+  max-width unset
 }

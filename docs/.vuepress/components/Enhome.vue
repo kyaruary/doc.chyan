@@ -1,10 +1,8 @@
 <template>
   <div class="home-page">
-    <!-- <h1>DEVELOPER FRIENDLY NODEJS WEB FRAMEWORK</h1> -->
-    <h1>开发者友好的Node.js HTTP框架</h1>
-    <!-- <p>MAKE IT EASIER TO USE</p> -->
-    <p>快速开发且易用</p>
-    <button @click="pushGuide">开始</button>
+    <h1>DEVELOPER FRIENDLY NODEJS WEB FRAMEWORK</h1>
+    <p>MAKE IT EASIER TO USE</p>
+    <button @click="pushGuide">START</button>
     <footer>copyright&copy;2020 chyan.co | powered by vuepress</footer>
   </div>
 </template>
@@ -19,7 +17,7 @@ export default {
   },
   methods: {
     pushGuide() {
-      this.$router.push("/overview/Introduction");
+      this.$router.push("/overview/en/Introduction");
     },
   },
 };
