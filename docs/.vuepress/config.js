@@ -41,12 +41,11 @@ const config = {
             collapsable: false,
             sidebarDepth: 2, // 可选的, 默认值是 1
             children: [
-              ["/overview/ChyanApplication/", "开始"],
+              ["/overview/ChyanApplication/", "起步"],
               ["/overview/Routers/", "路由"],
               ["/overview/AutoWired/", "依赖注入"],
               ["/overview/Middlewares/", "中间件"],
               ["/overview/Pipe/", "管道"],
-              ["/overview/Service/", "服务"],
               ["/overview/Common/", "内置对象"],
               ["/overview/Exception/", "异常处理"],
               ["/overview/Interceptor/", "拦截器"],
@@ -82,15 +81,8 @@ const config = {
 
         // 当前 locale 的 algolia docsearch 选项
         algolia: {},
-        nav: [{ text: "嵌套", link: "/zh/nested/" }],
-        sidebar: {
-          "/zh/": [
-            /* ... */
-          ],
-          "/zh/QuickStart": [
-            /* ... */
-          ],
-        },
+        nav: [],
+        sidebar: [["/en/Introduction/", "Introdution"]],
       },
     },
   },

@@ -1,3 +1,1 @@
-# Chyan Doc
-
-🎉
+🎉 Chyan Doc | Powered by vuepress

@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     pushGuide() {
-      this.$router.push("/overview/en/Introduction");
+      this.$router.push("/en/Introduction");
     },
   },
 };
